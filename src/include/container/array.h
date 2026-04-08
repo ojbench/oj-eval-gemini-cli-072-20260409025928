@@ -125,7 +125,7 @@ class array {  // NOLINT
       if (!iter_->data_[pos_].first) {
         throw std::exception();
       }
-      return &data_[pos_];
+      return &iter_->data_[pos_];
     }
   };
 

@@ -96,7 +96,7 @@ class circular_queue {  // NOLINT
     }
 
     auto operator*() const -> reference { return iter_->queue_[pos_ % SIZE]; }
-    auto operator->() const -> pointer { return &this->queue_[pos_ % SIZE]; }
+    auto operator->() const -> pointer { return &queue_[pos_ % SIZE]; }
   };
 
   using iterator = base_iterator<false>;
